@@ -13,7 +13,7 @@ export class RedditService {
 
   
 
-  private apiUrl = 'https://www.reddit.com/r/Angular2.json';
+  private apiUrl = 'https://redditapi-8e16.onrender.com/api/reddit';
 
 
   constructor(private http: HttpClient) { debugger}
