@@ -1,0 +1,27 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="../assets/reddit.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+   reddit
+  </a>
+</nav>
+<br>
+<div class="container">
+  <div class="row">
+    <div *ngFor="let post of posts" class="">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ post.title }}</h5>
+          <p class="card-text" [innerHtml]="post.safeSelftextHtml"> </p>
+          <a [href]="post.url" class="btn btn-link">read more</a>
+
+          <br>
+          <div class="score">
+
+            Score: {{ post.score }}</div>
+        </div>
+
+      </div>
+      <br>
+      <br>
+    </div>
+  </div>

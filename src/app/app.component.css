@@ -1,0 +1,10 @@
+
+   .score {
+    background-color: #ff5722;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: fit-content;
+  }
+  
